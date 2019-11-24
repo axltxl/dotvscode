@@ -53,4 +53,7 @@
     "workbench.colorTheme": "Field Lights",
     "workbench.iconTheme": "material-icon-theme",
     "window.zoomLevel": 0,
+
+    // SCM settings
+    "git.autofetch": true,
 }
