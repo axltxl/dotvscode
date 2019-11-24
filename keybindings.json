@@ -1,15 +1,15 @@
 [
-    // Workbench navigation
+    // Quick open navigation 
     { "key": "ctrl+j", "command": "workbench.action.quickOpenSelectNext", "when": "inQuickOpen" },
     { "key": "ctrl+k", "command": "workbench.action.quickOpenSelectPrevious", "when": "inQuickOpen" },
 
-    //// Suggestion box navigation
+    // Suggestion box navigation
     { "key": "ctrl+j", "command": "selectNextSuggestion", "when": "editorTextFocus && suggestWidgetVisible" },
     { "key": "ctrl+k", "command": "selectPrevSuggestion", "when": "editorTextFocus && suggestWidgetVisible" },
 
     //// List navigation
-    { "key": "ctrl+h", "command": "list.collapse", "when": "listFocus && !inputFocus" },
-    { "key": "ctrl+l", "command": "list.expand", "when": "listFocus && !inputFocus" },
-    { "key": "ctrl+j", "command": "list.focusDown", "when": "listFocus && !inputFocus" },
-    { "key": "ctrl+k", "command": "list.focusUp", "when": "listFocus && !inputFocus" }
+    //{ "key": "ctrl+h", "command": "list.collapse", "when": "listFocus && !inputFocus" },
+    //{ "key": "ctrl+l", "command": "list.expand", "when": "listFocus && !inputFocus" },
+    //{ "key": "ctrl+j", "command": "list.focusDown", "when": "listFocus && !inputFocus" },
+    //{ "key": "ctrl+k", "command": "list.focusUp", "when": "listFocus && !inputFocus" },
 ]
