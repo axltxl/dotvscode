@@ -45,7 +45,6 @@
     "editor.autoClosingOvertype": "always",
     "editor.cursorBlinking": "solid",
     "editor.renderWhitespace": "all",
-    "files.autoSave": "afterDelay",
     "files.insertFinalNewline": true,
 
     // Look and feel
