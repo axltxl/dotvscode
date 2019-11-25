@@ -1,40 +1,45 @@
 {
+    /////////////////////////////
     // vim (the most basic thing)
+    /////////////////////////////
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
     "vim.leader" : "space",
+    "vim.handleKeys": {
+        "<C-b>": false,
+        "<C-k>": false,
+        "<C-j>": false,
+        "<C-w>": false
+    },
     "vim.normalModeKeyBindings": [
+
         // Window navigation 
         /////////////////////
         { "before": [ "<leader>", "w", "h" ], "commands": [ "workbench.action.focusLeftGroup" ]},
         { "before": [ "<leader>", "w", "j" ], "commands": [ "workbench.action.focusBelowGroup" ]},
         { "before": [ "<leader>", "w", "k" ], "commands": [ "workbench.action.focusAboveGroup" ]},
         { "before": [ "<leader>", "w", "l" ], "commands": [ "workbench.action.focusRightGroup" ]},
+
+        // Split editors
         { "before": [ "<leader>", "w", "v" ], "commands": [ "workbench.action.splitEditorRight" ]},
         { "before": [ "<leader>", "w", "s" ], "commands": [ "workbench.action.splitEditorDown" ]},
-        { "before": [ "<leader>", "w", "d" ], "commands": [ "workbench.action.closeEditorsInGroup" ]},
 
         // Editor management
         ////////////////////
-        { "before": [ "<leader>", "b", "b" ], "commands": [ "workbench.action.showAllEditors"] },
-        { "before": [ "<leader>", "b", "d" ], "commands": [ "workbench.action.closeActiveEditor"] },
-        { "before": [ "<leader>", "b", "n" ], "commands": [ "workbench.action.nextEditor"] },
-        { "before": [ "<leader>", "b", "p" ], "commands": [ "workbench.action.previousEditor"] },
-        { "before": [ "<leader>", "b", "N" ], "commands": [ "workbench.action.files.newUntitledFile"] },
+        { "before": [ "<leader>", "b", "d" ], "commands": [ "workbench.action.closeActiveEditor" ] },
+        { "before": [ "<leader>", "b", "n" ], "commands": [ "workbench.action.files.newUntitledFile" ] },
+        { "before": [ "<leader>", ";", ";" ], "commands": [ "editor.action.commentLine" ] },
 
         // File management 
-        ////////////////// 
+        //////////////////
         { "before": [ "<leader>", "f", "s" ], "commands": [ "workbench.action.files.save"] }, // save file
-        { "before": [ "<leader>", "f", "t" ], "commands": [ "workbench.view.explorer"] },  // open explorer
-        { "before": [ "<leader>", "f", "f" ], "commands": [ "workbench.action.quickOpen"] },  // open file
 
         // SCM
         { "before": [ "<leader>", "g", "s" ], "commands": [ "workbench.view.scm"] },  // open explorer
-
-        // Toggle side bar
-        { "before": [ "<leader>", "tab"], "commands": [ "workbench.action.toggleSidebarVisibility"] }  // open explorer
     ],
+
+    // Terraform
 
     // Text editing settings
     "editor.minimap.enabled": false,
@@ -51,6 +56,8 @@
     // Look and feel
     "window.newWindowDimensions": "maximized",
     "workbench.colorTheme": "Field Lights",
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.iconTheme": "field-lights",
+    "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
+    "diffEditor.renderSideBySide": false,
 }

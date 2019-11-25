@@ -1,13 +1,16 @@
 {
-	// List of extensions which should be recommended for users of this workspace.
-	"recommendations": [
-		"vscodevim.vim",
-		"editorconfig.editorconfig",
-		"sveggiani.vscode-field-lights",
-		"nadako.vshaxe",
-		"alefragnani.project-manager"
-	],
-	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
-	"unwantedRecommendations": [
-	]
+  // List of extensions which should be recommended for users of this workspace.
+  "recommendations": [
+    // Basics
+    "vscodevim.vim",
+    "editorconfig.editorconfig",
+    "sveggiani.vscode-field-lights",
+    "alefragnani.project-manager",
+
+    // Haxe (haxe.org)
+    "nadako.vshaxe",
+
+    // Terraform support
+    "mauve.terraform"
+  ]
 }
