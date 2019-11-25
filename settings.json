@@ -64,7 +64,9 @@
     "window.menuBarVisibility": "hidden",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Field Lights",
-    "workbench.iconTheme": "field-lights",
+    "workbench.iconTheme": "field-lights-monochrome",
+    "editor.fontFamily": "Input Mono, Hack, Consolas, 'Courier New', monospace",
+    "editor.fontSize": 12,
 
     // SCM settings
     "git.autofetch": true,
