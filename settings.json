@@ -12,8 +12,9 @@
         "<C-j>": false,
         "<C-w>": false
     },
-    "vim.normalModeKeyBindings": [
 
+    // Key bindings for vim emulation
+    "vim.normalModeKeyBindings": [
         // Window navigation 
         /////////////////////
         { "before": [ "<leader>", "w", "h" ], "commands": [ "workbench.action.focusLeftGroup" ]},
@@ -30,6 +31,10 @@
         { "before": [ "<leader>", "b", "d" ], "commands": [ "workbench.action.closeActiveEditor" ] },
         { "before": [ "<leader>", "b", "n" ], "commands": [ "workbench.action.files.newUntitledFile" ] },
         { "before": [ "<leader>", ";", ";" ], "commands": [ "editor.action.commentLine" ] },
+
+        // vim-unimpaired
+        { "before": [ "[", "space" ], "commands": [ "editor.action.insertLineBefore" ]},
+        { "before": [ "]", "space" ], "commands": [ "editor.action.insertLineAfter" ]},
 
         // File management 
         //////////////////
@@ -54,10 +59,10 @@
 
     // Look and feel
     "window.newWindowDimensions": "maximized",
+    "window.menuBarVisibility": "hidden",
+    "window.zoomLevel": 0,
     "workbench.colorTheme": "Field Lights",
     "workbench.iconTheme": "field-lights",
-    "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 0,
 
     // SCM settings
     "git.autofetch": true,

@@ -3,14 +3,19 @@
   "recommendations": [
     // Basics
     "vscodevim.vim",
-    "editorconfig.editorconfig",
     "sveggiani.vscode-field-lights",
     "alefragnani.project-manager",
+
+    // editorconfig
+    "editorconfig.editorconfig",
 
     // Haxe (haxe.org)
     "nadako.vshaxe",
 
     // Terraform support
-    "mauve.terraform"
+    "mauve.terraform",
+
+    // GitLens
+    "eamodio.gitlens"
   ]
 }
