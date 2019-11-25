@@ -52,6 +52,8 @@
     "editor.insertSpaces": true,
     "editor.tabCompletion": "on",
     "editor.cursorStyle": "block",
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
     "editor.autoClosingOvertype": "always",
     "editor.cursorBlinking": "solid",
     "editor.renderWhitespace": "all",
