@@ -45,6 +45,19 @@
     ],
 
     // Terraform
+    "terraform.languageServer": {
+        "enabled": true,
+        "args": []
+    },
+    "terraform.indexing": {
+        "enabled": false,
+        "liveIndexing": false,
+        "delay": 500,
+        "exclude": [
+            ".terraform/**/*",
+            "**/.terraform/**/*"
+        ]
+    },
 
     // Text editing settings
     "editor.minimap.enabled": false,
