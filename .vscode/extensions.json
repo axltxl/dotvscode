@@ -12,9 +12,6 @@
     // Haxe (haxe.org)
     "nadako.vshaxe",
 
-    // Terraform support
-    "mauve.terraform",
-
     // GitLens
     "eamodio.gitlens"
   ]

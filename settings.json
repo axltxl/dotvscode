@@ -13,10 +13,12 @@
         "<C-w>": false
     },
 
+    /////////////////////////////////
     // Key bindings for vim emulation
+    /////////////////////////////////
     "vim.normalModeKeyBindings": [
+
         // Window navigation 
-        /////////////////////
         { "before": [ "<leader>", "w", "h" ], "commands": [ "workbench.action.focusLeftGroup" ]},
         { "before": [ "<leader>", "w", "j" ], "commands": [ "workbench.action.focusBelowGroup" ]},
         { "before": [ "<leader>", "w", "k" ], "commands": [ "workbench.action.focusAboveGroup" ]},
@@ -27,7 +29,6 @@
         { "before": [ "<leader>", "w", "s" ], "commands": [ "workbench.action.splitEditorDown" ]},
 
         // Editor management
-        ////////////////////
         { "before": [ "<leader>", "b", "d" ], "commands": [ "workbench.action.closeActiveEditor" ] },
         { "before": [ "<leader>", "b", "n" ], "commands": [ "workbench.action.files.newUntitledFile" ] },
         { "before": [ "<leader>", ";", ";" ], "commands": [ "editor.action.commentLine" ] },
@@ -37,7 +38,6 @@
         { "before": [ "]", "space" ], "commands": [ "editor.action.insertLineAfter" ]},
 
         // File management 
-        //////////////////
         { "before": [ "<leader>", "f", "s" ], "commands": [ "workbench.action.files.save"] }, // save file
 
         // SCM
@@ -78,8 +78,8 @@
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Field Lights",
     "workbench.iconTheme": "field-lights-monochrome",
-    "editor.fontFamily": "Input Mono, Hack, Consolas, 'Courier New', monospace",
-    "editor.fontSize": 12,
+    "editor.fontFamily": "Source Code Variable, Hack, Consolas, monospace",
+    "editor.fontSize": 14,
 
     // SCM settings
     "git.autofetch": true,
