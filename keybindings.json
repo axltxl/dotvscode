@@ -1,5 +1,5 @@
 [
-    // Quick open navigation 
+    // Quick open navigation
     { "key": "alt+k", "command": "workbench.action.quickOpenSelectPrevious", "when": "inQuickOpen" },
     { "key": "alt+j", "command": "workbench.action.quickOpenSelectNext", "when": "inQuickOpen" },
 
