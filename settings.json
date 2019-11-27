@@ -18,140 +18,31 @@
     /////////////////////////////////
     "vim.normalModeKeyBindings": [
         // Window navigation 
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "h"
-            ],
-            "commands": [
-                "workbench.action.focusLeftGroup"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "j"
-            ],
-            "commands": [
-                "workbench.action.focusBelowGroup"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "k"
-            ],
-            "commands": [
-                "workbench.action.focusAboveGroup"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "l"
-            ],
-            "commands": [
-                "workbench.action.focusRightGroup"
-            ]
-        },
+        { "before": [ "<leader>", "w", "h" ], "commands": [ "workbench.action.focusLeftGroup" ] },
+        { "before": [ "<leader>", "w", "j" ], "commands": [ "workbench.action.focusBelowGroup" ] },
+        { "before": [ "<leader>", "w", "k" ], "commands": [ "workbench.action.focusAboveGroup" ] },
+        { "before": [ "<leader>", "w", "l" ], "commands": [ "workbench.action.focusRightGroup" ] },
+
         // Split editors
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "v"
-            ],
-            "commands": [
-                "workbench.action.splitEditorRight"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "s"
-            ],
-            "commands": [
-                "workbench.action.splitEditorDown"
-            ]
-        },
+        { "before": [ "<leader>", "w", "v" ], "commands": [ "workbench.action.splitEditorRight" ] },
+        { "before": [ "<leader>", "w", "s" ], "commands": [ "workbench.action.splitEditorDown" ] },
+
         // Editor management
-        {
-            "before": [
-                "<leader>",
-                "b",
-                "d"
-            ],
-            "commands": [
-                "workbench.action.closeActiveEditor"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "b",
-                "n"
-            ],
-            "commands": [
-                "workbench.action.files.newUntitledFile"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                ";",
-                ";"
-            ],
-            "commands": [
-                "editor.action.commentLine"
-            ]
-        },
+        { "before": [ "<leader>", "b", "d" ], "commands": [ "workbench.action.closeActiveEditor" ] },
+        { "before": [ "<leader>", "b", "n" ], "commands": [ "workbench.action.files.newUntitledFile" ] },
+        { "before": [ "<leader>", ";", ";" ], "commands": [ "editor.action.commentLine" ] },
+
         // vim-unimpaired
-        {
-            "before": [
-                "[",
-                "space"
-            ],
-            "commands": [
-                "editor.action.insertLineBefore"
-            ]
-        },
-        {
-            "before": [
-                "]",
-                "space"
-            ],
-            "commands": [
-                "editor.action.insertLineAfter"
-            ]
-        },
+        { "before": [ "[", "space" ], "commands": [ "editor.action.insertLineBefore" ] },
+        { "before": [ "]", "space" ], "commands": [ "editor.action.insertLineAfter" ] },
+
         // File management 
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "s"
-            ],
-            "commands": [
-                "workbench.action.files.save"
-            ]
-        }, // save file
+        { "before": [ "<leader>", "f", "s" ], "commands": [ "workbench.action.files.save" ] }, // save file
+
         // SCM
-        {
-            "before": [
-                "<leader>",
-                "g",
-                "s"
-            ],
-            "commands": [
-                "workbench.view.scm"
-            ]
-        }, // open explorer
+        { "before": [ "<leader>", "g", "s" ], "commands": [ "workbench.view.scm" ] }, // open explorer
     ],
+
     // Terraform
     "terraform.languageServer": {
         "enabled": true,
@@ -165,6 +56,7 @@
             ".terraform/**/*",
         ]
     },
+
     // Text editing settings
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
@@ -173,21 +65,26 @@
     "editor.cursorStyle": "block",
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
     "editor.autoClosingOvertype": "always",
     "editor.cursorBlinking": "solid",
     "editor.renderWhitespace": "all",
     "files.insertFinalNewline": true,
+    
     // Look and feel
     "window.newWindowDimensions": "maximized",
-    "window.menuBarVisibility": "hidden",
+    "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
     "workbench.colorTheme": "Field Lights",
     "workbench.iconTheme": "field-lights-monochrome",
     "editor.fontFamily": "Input Mono, Hack, Consolas, monospace",
-    "editor.fontWeight": "500",
+    "editor.fontWeight": "400",
     "editor.fontSize": 14,
+    "files.simpleDialog.enable": true,
+    
     // SCM settings
     "git.autofetch": true,
     "diffEditor.renderSideBySide": false,
+
+    // Python
+    "python.jediEnabled": false,
 }

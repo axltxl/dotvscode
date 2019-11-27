@@ -1,21 +1,22 @@
 {
-  // List of extensions which should be recommended for users of this workspace.
   "recommendations": [
-    // Basics
+    // The essentials
     "vscodevim.vim",
     "sveggiani.vscode-field-lights",
     "alefragnani.project-manager",
-
-    // editorconfig
     "editorconfig.editorconfig",
 
-    // Haxe (haxe.org)
-    "nadako.vshaxe",
-
-    // Terraform support
+    // Terraform
     "mauve.terraform",
 
-    // GitLens
+    // Git
     "eamodio.gitlens"
+
+    // Haxe
+    "nadako.vshaxe",
+
+    // Python
+    "ms-python.python"
+    "wholroyd.jinja "
   ]
 }
