@@ -17,7 +17,7 @@
     // Key bindings for vim emulation
     /////////////////////////////////
     "vim.normalModeKeyBindings": [
-        // Window navigation 
+        // Window navigation
         { "before": [ "<leader>", "w", "h" ], "commands": [ "workbench.action.focusLeftGroup" ] },
         { "before": [ "<leader>", "w", "j" ], "commands": [ "workbench.action.focusBelowGroup" ] },
         { "before": [ "<leader>", "w", "k" ], "commands": [ "workbench.action.focusAboveGroup" ] },
@@ -36,7 +36,7 @@
         { "before": [ "[", "space" ], "commands": [ "editor.action.insertLineBefore" ] },
         { "before": [ "]", "space" ], "commands": [ "editor.action.insertLineAfter" ] },
 
-        // File management 
+        // File management
         { "before": [ "<leader>", "f", "s" ], "commands": [ "workbench.action.files.save" ] }, // save file
 
         // SCM
@@ -69,7 +69,8 @@
     "editor.cursorBlinking": "solid",
     "editor.renderWhitespace": "all",
     "files.insertFinalNewline": true,
-    
+    "files.trimTrailingWhitespace": true,
+
     // Look and feel
     "window.newWindowDimensions": "maximized",
     "window.menuBarVisibility": "toggle",
@@ -80,9 +81,10 @@
     "editor.fontWeight": "400",
     "editor.fontSize": 14,
     "files.simpleDialog.enable": true,
-    
+
     // SCM settings
     "git.autofetch": true,
+    "git.showProgress": true,
     "diffEditor.renderSideBySide": false,
 
     // Python
