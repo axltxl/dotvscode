@@ -6,17 +6,7 @@
     "alefragnani.project-manager",
     "editorconfig.editorconfig",
 
-    // Terraform
-    "mauve.terraform",
-
     // Git
     "eamodio.gitlens"
-
-    // Haxe
-    "nadako.vshaxe",
-
-    // Python
-    "ms-python.python"
-    "wholroyd.jinja "
   ]
 }

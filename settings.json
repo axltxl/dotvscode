@@ -43,19 +43,9 @@
         { "before": [ "<leader>", "g", "s" ], "commands": [ "workbench.view.scm" ] }, // open explorer
     ],
 
-    // Terraform
-    "terraform.languageServer": {
-        "enabled": true,
-        "args": []
-    },
-    "terraform.indexing": {
-        "enabled": false,
-        "liveIndexing": false,
-        "delay": 500,
-        "exclude": [
-            ".terraform/**/*",
-        ]
-    },
+    "vim.visualModeKeyBindings": [
+        { "before": [ "<leader>", ";" ], "commands": [ "editor.action.commentLine" ] },
+    ],
 
     // Text editing settings
     "editor.minimap.enabled": false,
@@ -74,9 +64,8 @@
     // Look and feel
     "window.newWindowDimensions": "maximized",
     "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 0,
+    "window.zoomLevel": -0.5,
     "workbench.colorTheme": "City Lights",
-    "workbench.iconTheme": "city-lights-icons-vsc-light",
     "editor.fontFamily": "Fira Mono, monospace",
     "editor.fontWeight": "500",
     "editor.fontSize": 14,
@@ -86,6 +75,7 @@
     "zenMode.fullScreen": true,
     "zenMode.hideStatusBar": false,
     "zenMode.centerLayout": false,
+    "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": false,
 
     // SCM settings
@@ -93,7 +83,7 @@
     "git.showProgress": true,
     "diffEditor.renderSideBySide": false,
 
-    // Python
-    "python.jediEnabled": false,
-    "python.pythonPath": "/home/axltxl/.i3pyvenv/bin/python",
+    "material-icon-theme.saturation": null,
+    "material-icon-theme.folders.theme": "classic",
+    "workbench.iconTheme": "city-lights-icons-vsc-light",
 }
