@@ -64,11 +64,10 @@
     // Look and feel
     "window.newWindowDimensions": "maximized",
     "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": -0.5,
-    "workbench.colorTheme": "City Lights",
+    "window.zoomLevel": 0,
     "editor.fontFamily": "Fira Mono, monospace",
-    "editor.fontWeight": "500",
-    "editor.fontSize": 14,
+    "editor.fontWeight": "400",
+    "editor.fontSize": 13,
     "files.simpleDialog.enable": true,
 
     // Zen mode
@@ -86,4 +85,7 @@
     "material-icon-theme.saturation": null,
     "material-icon-theme.folders.theme": "classic",
     "workbench.iconTheme": "city-lights-icons-vsc-light",
+    "workbench.colorTheme": "Material Dark Soda",
+    "git.suggestSmartCommit": false,
+    "diffEditor.ignoreTrimWhitespace": false,
 }

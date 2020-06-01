@@ -2,7 +2,6 @@
   "recommendations": [
     // The essentials
     "vscodevim.vim",
-    "sveggiani.vscode-field-lights",
     "alefragnani.project-manager",
     "editorconfig.editorconfig",
 
