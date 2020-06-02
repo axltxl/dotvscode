@@ -84,7 +84,7 @@
 
     "material-icon-theme.saturation": null,
     "material-icon-theme.folders.theme": "classic",
-    "workbench.iconTheme": "city-lights-icons-vsc-light",
+    "workbench.iconTheme": "material-icon-theme",
     "workbench.colorTheme": "Material Dark Soda",
     "git.suggestSmartCommit": false,
     "diffEditor.ignoreTrimWhitespace": false,

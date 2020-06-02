@@ -6,6 +6,10 @@
     "editorconfig.editorconfig",
 
     // Git
-    "eamodio.gitlens"
+    "eamodio.gitlens",
+
+    // Look and feel
+    "jbw91.theme-material-dark-soda",
+    "pkief.material-icon-theme"
   ]
 }
