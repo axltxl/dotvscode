@@ -1,13 +1,22 @@
 [
     // Common shortcuts I need to be normalized across platforms
     { "key": "ctrl+shift+p",          "command": "workbench.action.showCommands" },
+    { "key": "ctrl+shift+o",          "command": "workbench.action.gotoSymbol" },
     { "key": "ctrl+p",                "command": "workbench.action.quickOpen" },
 
+    // Editors
     { "key": "ctrl+w",                "command": "workbench.action.closeActiveEditor" },
-    { "key": "ctrl+b",                "command": "workbench.action.toggleSidebarVisibility" },
 
+    // Open files and folders
+    { "key": "ctrl+o",                "command": "workbench.action.files.openFile" },
+    { "key": "ctrl+k ctrl+o",         "command": "workbench.action.files.openFolder" },
+
+    // Side panels
+    { "key": "ctrl+b",                "command": "workbench.action.toggleSidebarVisibility" },
     { "key": "ctrl+shift+e",          "command": "workbench.view.explorer" },
     { "key": "ctrl+shift+x",          "command": "workbench.view.extensions" },
+    { "key": "ctrl+shift+g",          "command": "workbench.view.scm" },
+    { "key": "ctrl+shift+f",          "command": "workbench.view.search"},
 
     // Quick open navigation
     { "key": "alt+k", "command": "workbench.action.quickOpenSelectPrevious", "when": "inQuickOpen" },
