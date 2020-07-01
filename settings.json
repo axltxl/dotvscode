@@ -80,12 +80,12 @@
     // SCM settings
     "git.autofetch": true,
     "git.showProgress": true,
+    "git.suggestSmartCommit": false,
     "diffEditor.renderSideBySide": false,
+    "diffEditor.ignoreTrimWhitespace": false,
 
     "material-icon-theme.saturation": null,
     "material-icon-theme.folders.theme": "classic",
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Material Dark Soda",
-    "git.suggestSmartCommit": false,
-    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.colorTheme": "Visual Studio Light",
 }
