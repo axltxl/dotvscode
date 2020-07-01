@@ -7,9 +7,13 @@
     // Editors
     { "key": "ctrl+w",                "command": "workbench.action.closeActiveEditor" },
 
+    // SCM
+    { "key": "ctrl+enter",             "command": "scm.acceptInput", "when": "scmRepository" },
+
     // Open files and folders
-    { "key": "ctrl+o",                "command": "workbench.action.files.openFileFolder" },
-    // { "key": "ctrl+k ctrl+o",         "command": "workbench.action.files.openFolder" },
+    { "key": "ctrl+o",                "command": "workbench.action.files.openFileFolder", "when": "isMac" },
+    { "key": "ctrl+o",                "command": "workbench.action.files.openFile", "when": "!isMac" },
+    { "key": "ctrl+k ctrl+o",         "command": "workbench.action.files.openFolder", "when": "!isMac" },
 
     // Side panels
     { "key": "ctrl+b",                "command": "workbench.action.toggleSidebarVisibility" },
