@@ -1,4 +1,14 @@
 [
+    // Common shortcuts I need to be normalized across platforms
+    { "key": "ctrl+shift+p",          "command": "workbench.action.showCommands" },
+    { "key": "ctrl+p",                "command": "workbench.action.quickOpen" },
+
+    { "key": "ctrl+w",                "command": "workbench.action.closeActiveEditor" },
+    { "key": "ctrl+b",                "command": "workbench.action.toggleSidebarVisibility" },
+
+    { "key": "ctrl+shift+e",          "command": "workbench.view.explorer" },
+    { "key": "ctrl+shift+x",          "command": "workbench.view.extensions" },
+
     // Quick open navigation
     { "key": "alt+k", "command": "workbench.action.quickOpenSelectPrevious", "when": "inQuickOpen" },
     { "key": "alt+j", "command": "workbench.action.quickOpenSelectNext", "when": "inQuickOpen" },
