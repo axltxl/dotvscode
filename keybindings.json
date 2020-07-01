@@ -34,6 +34,16 @@
     { "key": "alt+8",                "command": "workbench.action.openEditorAtIndex8"},
     { "key": "alt+9",                "command": "workbench.action.openEditorAtIndex9"},
 
+    { "key": "cmd+1",                "command": "workbench.action.openEditorAtIndex1", "when": "isMac"},
+    { "key": "cmd+2",                "command": "workbench.action.openEditorAtIndex2", "when": "isMac"},
+    { "key": "cmd+3",                "command": "workbench.action.openEditorAtIndex3", "when": "isMac"},
+    { "key": "cmd+4",                "command": "workbench.action.openEditorAtIndex4", "when": "isMac"},
+    { "key": "cmd+5",                "command": "workbench.action.openEditorAtIndex5", "when": "isMac"},
+    { "key": "cmd+6",                "command": "workbench.action.openEditorAtIndex6", "when": "isMac"},
+    { "key": "cmd+7",                "command": "workbench.action.openEditorAtIndex7", "when": "isMac"},
+    { "key": "cmd+8",                "command": "workbench.action.openEditorAtIndex8", "when": "isMac"},
+    { "key": "cmd+9",                "command": "workbench.action.openEditorAtIndex9", "when": "isMac"},
+
     // Toggle zen mode
     { "key": "ctrl+k z",             "command": "workbench.action.toggleZenMode" },
 
