@@ -7,6 +7,8 @@
 
     // Git
     "eamodio.gitlens",
+    "github.vscode-pull-request-github", // GitHub pull requests and issues management
+
 
     // Look and feel
     "jbw91.theme-material-dark-soda",
