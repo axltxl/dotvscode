@@ -65,9 +65,9 @@
     "window.newWindowDimensions": "maximized",
     "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
-    "editor.fontFamily": "Fira Mono, monospace",
+    "editor.fontFamily": "Fira Code, monospace",
     "editor.fontWeight": "400",
-    "editor.fontSize": 13,
+    "editor.fontSize": 14,
     "files.simpleDialog.enable": true,
 
     // Zen mode
@@ -75,7 +75,7 @@
     "zenMode.hideStatusBar": false,
     "zenMode.centerLayout": false,
     "zenMode.hideLineNumbers": false,
-    "zenMode.hideTabs": false,
+    "zenMode.hideTabs": true,
 
     // SCM settings
     "git.autofetch": true,
@@ -86,6 +86,7 @@
 
     "material-icon-theme.saturation": null,
     "material-icon-theme.folders.theme": "classic",
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.iconTheme": "vscode-icons",
+    "workbench.colorTheme": "Shades of Purple",
+    "vsicons.dontShowNewVersionMessage": true,
 }
