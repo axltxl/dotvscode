@@ -4,14 +4,8 @@
     "vscodevim.vim",
     "alefragnani.project-manager",
     "editorconfig.editorconfig",
-
     // Git
     "eamodio.gitlens",
     "github.vscode-pull-request-github", // GitHub pull requests and issues management
-
-
-    // Look and feel
-    "jbw91.theme-material-dark-soda",
-    "pkief.material-icon-theme"
   ]
 }
