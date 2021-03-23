@@ -58,10 +58,9 @@
     { "key": "shift+cmd+j",   "command": "workbench.action.decreaseViewHeight", "when": "editorFocus" },
     { "key": "shift+cmd+k",   "command": "workbench.action.increaseViewHeight", "when": "editorFocus" },
     { "key": "shift+cmd+l",   "command": "workbench.action.increaseViewWidth", "when": "editorFocus" },
-    { "key": "shift+cmd+e",   "command": "-workbench.view.explorer", "when": "viewContainer.workbench.view.explorer.enabled" },
 
     // Defaults cleanup
-    // This forces me to use the vim ones
+    // This forces me to use my own
     { "key": "f1",            "command": "-workbench.action.showCommands" },
-    { "key": "shift+cmd+p",   "command": "-workbench.action.showCommands" }
+    { "key": "shift+cmd+e",   "command": "-workbench.view.explorer", "when": "viewContainer.workbench.view.explorer.enabled" },
 ]
