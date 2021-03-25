@@ -62,10 +62,10 @@
     "editor.cursorStyle": "block",
     "editor.formatOnType": true,
     "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
     "editor.autoClosingOvertype": "always",
     "editor.cursorBlinking": "solid",
     "editor.renderWhitespace": "all",
-    "editor.formatOnSave": true,
     "editor.fontFamily": "Fira Code, monospace",
     "editor.fontWeight": "400",
     "editor.fontSize": 14,
@@ -83,8 +83,12 @@
     "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
     "files.simpleDialog.enable": true,
-    "workbench.iconTheme": "vscode-icons",
-    "workbench.colorTheme": "Dark (Molokai)",
+    "workbench.iconTheme": "material-icon-theme",
+    "material-icon-theme.saturation": 0.7,
+    "material-icon-theme.folders.color": "#26a69a",
+    "material-icon-theme.folders.theme": "specific",
+    "material-icon-theme.activeIconPack": "",
+    "workbench.colorTheme": "Nord",
     "vsicons.dontShowNewVersionMessage": true,
 
     // Zen mode
@@ -113,7 +117,12 @@
     /* --------------- */
 
     // Terraform
+    // (hashicorp.terraform)
+    "[terraform]": { "editor.formatOnSave": true },
     "terraform.languageServer": {
-        "external": true
+        "enabled": true,
+        "args": [
+            "serve"
+        ]
     }
 }
