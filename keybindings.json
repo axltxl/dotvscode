@@ -1,72 +1,196 @@
 [
+    ///////////////////////////////////
     // Common shortcuts I need to be normalized across platforms
-    { "key": "ctrl+shift+o",  "command": "workbench.action.gotoSymbol" },
-    { "key": "ctrl+p",        "command": "workbench.action.quickOpen" },
-
-    // Editors
-    { "key": "ctrl+w",        "command": "workbench.action.closeActiveEditor" },
-
+    ///////////////////////////////////
+    {
+        "key": "ctrl+shift+o",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "workbench.action.quickOpen"
+    },
+    ///////////////////////////////////
     // SCM
-    { "key": "ctrl+enter",    "command": "scm.acceptInput", "when": "scmRepository" },
-
+    ///////////////////////////////////
+    {
+        "key": "ctrl+enter",
+        "command": "scm.acceptInput",
+        "when": "scmRepository"
+    },
+    ///////////////////////////////////
     // Open files and folders
-    { "key": "ctrl+o",        "command": "workbench.action.files.openFileFolder", "when": "isMac" },
-    { "key": "ctrl+o",        "command": "workbench.action.files.openFile", "when": "!isMac" },
-    { "key": "ctrl+k ctrl+o", "command": "workbench.action.files.openFolder", "when": "!isMac" },
-
-    // Side panels
-    { "key": "ctrl+j",        "command": "workbench.action.togglePanel" },
-
+    ///////////////////////////////////
+    {
+        "key": "ctrl+o",
+        "command": "workbench.action.files.openFileFolder",
+        "when": "isMac"
+    }
+    ///////////////////////////////////
+    // Panel
+    ///////////////////////////////////
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.togglePanel"
+    },
+    ///////////////////////////////////
     // Switch to files within editors
-    { "key": "alt+1",         "command": "workbench.action.openEditorAtIndex1" },
-    { "key": "alt+2",         "command": "workbench.action.openEditorAtIndex2" },
-    { "key": "alt+3",         "command": "workbench.action.openEditorAtIndex3" },
-    { "key": "alt+4",         "command": "workbench.action.openEditorAtIndex4" },
-    { "key": "alt+5",         "command": "workbench.action.openEditorAtIndex5" },
-    { "key": "alt+6",         "command": "workbench.action.openEditorAtIndex6" },
-    { "key": "alt+7",         "command": "workbench.action.openEditorAtIndex7" },
-    { "key": "alt+8",         "command": "workbench.action.openEditorAtIndex8" },
-    { "key": "alt+9",         "command": "workbench.action.openEditorAtIndex9" },
-    { "key": "cmd+1",         "command": "workbench.action.openEditorAtIndex1", "when": "isMac" },
-    { "key": "cmd+2",         "command": "workbench.action.openEditorAtIndex2", "when": "isMac" },
-    { "key": "cmd+3",         "command": "workbench.action.openEditorAtIndex3", "when": "isMac" },
-    { "key": "cmd+4",         "command": "workbench.action.openEditorAtIndex4", "when": "isMac" },
-    { "key": "cmd+5",         "command": "workbench.action.openEditorAtIndex5", "when": "isMac" },
-    { "key": "cmd+6",         "command": "workbench.action.openEditorAtIndex6", "when": "isMac" },
-    { "key": "cmd+7",         "command": "workbench.action.openEditorAtIndex7", "when": "isMac" },
-    { "key": "cmd+8",         "command": "workbench.action.openEditorAtIndex8", "when": "isMac" },
-    { "key": "cmd+9",         "command": "workbench.action.openEditorAtIndex9", "when": "isMac" },
-
+    ///////////////////////////////////
+    {
+        "key": "ctrl+; 1",
+        "command": "workbench.action.openEditorAtIndex1"
+    },
+    {
+        "key": "ctrl+; 2",
+        "command": "workbench.action.openEditorAtIndex2"
+    },
+    {
+        "key": "ctrl+; 3",
+        "command": "workbench.action.openEditorAtIndex3"
+    },
+    ///////////////////////////////////
     // Input blur (removes any focus from any input field yayyy)
-    { "key": "ctrl+[",        "command": "workbench.action.blur"},
-
+    ///////////////////////////////////
+    {
+        "key": "ctrl+[",
+        "command": "workbench.action.blur"
+    },
+    ///////////////////////////////////
     // Toggle zen mode
-    { "key": "ctrl+k z",      "command": "workbench.action.toggleZenMode" },
-
+    ///////////////////////////////////
+    {
+        "key": "ctrl+; z",
+        "command": "workbench.action.toggleZenMode"
+    },
+    ///////////////////////////////////
     // Quick open navigation
-    { "key": "ctrl+k",        "command": "workbench.action.quickOpenSelectPrevious", "when": "inQuickOpen" },
-    { "key": "ctrl+j",        "command": "workbench.action.quickOpenSelectNext", "when": "inQuickOpen" },
-
+    ///////////////////////////////////
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    ///////////////////////////////////
     // Suggestion box navigation
-    { "key": "ctrl+j",        "command": "selectNextSuggestion", "when": "editorTextFocus && suggestWidgetVisible" },
-    { "key": "ctrl+k",        "command": "selectPrevSuggestion", "when": "editorTextFocus && suggestWidgetVisible" },
-
+    ///////////////////////////////////
+    {
+        "key": "ctrl+j",
+        "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "editorTextFocus && suggestWidgetVisible"
+    },
+    ///////////////////////////////////
     // List navigation
-    { "key": "ctrl+h",        "command": "list.collapse",  "when": "listFocus && !inputFocus" },
-    { "key": "ctrl+l",        "command": "list.expand",    "when": "listFocus && !inputFocus" },
-    { "key": "ctrl+j",        "command": "list.focusDown", "when": "listFocus && !inputFocus" },
-    { "key": "ctrl+k",        "command": "list.focusUp",   "when": "listFocus && !inputFocus" },
-
-    // Editor resizing
-    { "key": "shift+cmd+h",   "command": "workbench.action.decreaseViewWidth", "when": "editorFocus" },
-    { "key": "shift+cmd+j",   "command": "workbench.action.decreaseViewHeight", "when": "editorFocus" },
-    { "key": "shift+cmd+k",   "command": "workbench.action.increaseViewHeight", "when": "editorFocus" },
-    { "key": "shift+cmd+l",   "command": "workbench.action.increaseViewWidth", "when": "editorFocus" },
-
+    ///////////////////////////////////
+    {
+        "key": "ctrl+h",
+        "command": "list.collapse",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "list.expand",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "list.focusDown",
+        "when": "listFocus && !inputFocus"
+    },
+    {
+        "key": "ctrl+k",
+        "command": "list.focusUp",
+        "when": "listFocus && !inputFocus"
+    },
+    ///////////////////////////////////
+    // Editors
+    ///////////////////////////////////
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    // resizing
+    {
+        "key": "shift+cmd+h",
+        "command": "workbench.action.decreaseViewWidth",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+j",
+        "command": "workbench.action.decreaseViewHeight",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "workbench.action.increaseViewHeight",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "workbench.action.increaseViewWidth",
+        "when": "editorFocus"
+    },
+    ///////////////////////////////////
     // Side panels
-    { "key": "ctrl+b",        "command": "workbench.action.toggleSidebarVisibility" },
-    { "key": "shift+cmd+p",   "command": "workbench.action.showCommands" },
-    { "key": "shift+cmd+e",   "command": "workbench.view.explorer"},
-    { "key": "shift+cmd+x",   "command": "workbench.view.extensions"},
-    { "key": "shift+cmd+f",   "command": "workbench.view.search"}
+    ///////////////////////////////////
+    {
+        "key": "ctrl+b",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "ctrl+; space",
+        "command": "workbench.action.showCommands"
+    },
+    {
+        "key": "f1",
+        "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "ctrl+; e",
+        "command": "workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "ctrl+; f",
+        "command": "workbench.view.search"
+    },
+    // Project Manager
+    {
+        "key": "ctrl+; p",
+        "command": "projectManager.listProjects"
+    },
+    {
+        "key": "ctrl+; x",
+        "command": "workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    // These will force me to use the previous ones
+    {
+        "key": "shift+cmd+p",
+        "command": "-workbench.action.showCommands"
+    },
+    {
+        "key": "shift+cmd+e",
+        "command": "-workbench.view.explorer",
+        "when": "viewContainer.workbench.view.explorer.enabled"
+    },
+    {
+        "key": "shift+cmd+x",
+        "command": "-workbench.view.extensions",
+        "when": "viewContainer.workbench.view.extensions.enabled"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-workbench.view.search",
+        "when": "workbench.view.search.active"
+    }
 ]
