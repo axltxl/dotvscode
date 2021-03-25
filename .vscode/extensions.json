@@ -4,8 +4,19 @@
     "vscodevim.vim",
     "alefragnani.project-manager",
     "editorconfig.editorconfig",
+
     // Git
     "eamodio.gitlens",
     "github.vscode-pull-request-github", // GitHub pull requests and issues management
+
+    // Look and feel
+    "arcticicestudio.nord-visual-studio-code",
+    "pkief.material-icon-theme",
+
+    // Language/tools support
+    "ms-python.python",
+    "wholroyd.jinja",
+    "hashicorp.terraform",
+    "ms-azuretools.vscode-docker"
   ]
 }
