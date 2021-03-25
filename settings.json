@@ -72,6 +72,12 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
 
+    // Editor group settings
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 1,
+    "workbench.editor.showTabs": false,
+
     // Look and feel
     "window.newWindowDimensions": "maximized",
     "window.menuBarVisibility": "toggle",
