@@ -13,47 +13,149 @@
         "<C-w>": false,
         "<C-o>": false
     },
-
     /////////////////////////////////
     // Key bindings for vim emulation
     /////////////////////////////////
     "vim.normalModeKeyBindings": [
         // Editor navigation
-        { "before": [ "<leader>", "w", "h" ],   "commands": [ "workbench.action.focusLeftGroup" ] },
-        { "before": [ "<leader>", "w", "j" ],   "commands": [ "workbench.action.focusBelowGroup" ] },
-        { "before": [ "<leader>", "w", "k" ],   "commands": [ "workbench.action.focusAboveGroup" ] },
-        { "before": [ "<leader>", "w", "l" ],   "commands": [ "workbench.action.focusRightGroup" ] },
-
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.focusLeftGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.focusBelowGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.focusAboveGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.focusRightGroup"
+            ]
+        },
         // Split editors
-        { "before": [ "<leader>", "w", "v" ],   "commands": [ "workbench.action.splitEditorRight" ] },
-        { "before": [ "<leader>", "w", "s" ],   "commands": [ "workbench.action.splitEditorDown" ] },
-
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "v"
+            ],
+            "commands": [
+                "workbench.action.splitEditorRight"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.splitEditorDown"
+            ]
+        },
         // Editor management
-        { "before": [ "<leader>", "w", "d" ],   "commands": [ "workbench.action.closeActiveEditor" ] },
-
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "d"
+            ],
+            "commands": [
+                "workbench.action.closeActiveEditor"
+            ]
+        },
         // vim-nerdcommenter
-        { "before": [ "<leader>", ";", ";" ],   "commands": [ "editor.action.commentLine" ] },
-
+        {
+            "before": [
+                "<leader>",
+                ";",
+                ";"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
         // vim-unimpaired
-        { "before": [ "[", "space" ],           "commands": [ "editor.action.insertLineBefore" ] },
-        { "before": [ "]", "space" ],           "commands": [ "editor.action.insertLineAfter" ] },
-
+        {
+            "before": [
+                "[",
+                "space"
+            ],
+            "commands": [
+                "editor.action.insertLineBefore"
+            ]
+        },
+        {
+            "before": [
+                "]",
+                "space"
+            ],
+            "commands": [
+                "editor.action.insertLineAfter"
+            ]
+        },
         // File management
-        { "before": [ "<leader>", "f", "n" ],   "commands": [ "workbench.action.files.newUntitledFile" ] },
-        { "before": [ "<leader>", "f", "s" ],   "commands": [ "workbench.action.files.save" ] },
-
-        // SCM
-        { "before": [ "<leader>", "g", "s" ],   "commands": [ "workbench.view.scm" ] },
-
-        // Projet Manager
-        { "before": [ "<leader>", "p", "p" ],   "commands": [ "projectManager.listProjects" ] },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "n"
+            ],
+            "commands": [
+                "workbench.action.files.newUntitledFile"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "f",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.files.save"
+            ]
+        }
     ],
-
     "vim.visualModeKeyBindings": [
-        { "before": [ "<leader>", ";" ],        "commands": [ "editor.action.commentLine" ] },
+        {
+            "before": [
+                "<leader>",
+                ";"
+            ],
+            "commands": [
+                "editor.action.commentLine"
+            ]
+        },
     ],
-
+    ///////////////////////////////////
     // Text editing settings
+    ///////////////////////////////////
     "explorer.confirmDelete": false,
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
@@ -71,14 +173,16 @@
     "editor.fontSize": 14,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-
+    ///////////////////////////////////
     // Editor group settings
+    ///////////////////////////////////
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
-    "workbench.editor.limit.value": 1,
-    "workbench.editor.showTabs": false,
-
+    "workbench.editor.limit.value": 3,
+    "workbench.editor.showTabs": true,
+    ///////////////////////////////////
     // Look and feel
+    ///////////////////////////////////
     "window.newWindowDimensions": "maximized",
     "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
@@ -90,39 +194,46 @@
     "material-icon-theme.activeIconPack": "",
     "workbench.colorTheme": "Nord",
     "vsicons.dontShowNewVersionMessage": true,
-
+    ///////////////////////////////////
     // Zen mode
+    ///////////////////////////////////
     "zenMode.fullScreen": true,
     "zenMode.hideStatusBar": false,
     "zenMode.centerLayout": false,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": true,
-
+    ///////////////////////////////////
     // SCM settings
+    ///////////////////////////////////
     "git.autofetch": true,
     "git.showProgress": true,
     "git.suggestSmartCommit": false,
     "diffEditor.renderSideBySide": false,
     "diffEditor.ignoreTrimWhitespace": false,
-
+    ///////////////////////////////////
     // Integrated terminal
+    ///////////////////////////////////
     "terminal.integrated.commandsToSkipShell": [
         "-workbench.action.quickOpen"
     ],
-
-    // Don't format these files on save
-    "[jsonc]": { "editor.formatOnSave": false },
-
-    /* Plugins section */
-    /* --------------- */
-
+    ///////////////////////////////////
+    // Plugins section
+    ///////////////////////////////////
     // Terraform
     // (hashicorp.terraform)
-    "[terraform]": { "editor.formatOnSave": true },
+    "[terraform]": {
+        "editor.formatOnSave": true
+    },
     "terraform.languageServer": {
         "enabled": true,
         "args": [
             "serve"
         ]
-    }
+    },
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter.notebook.ipynb",
+            "filenamePattern": "*.ipynb"
+        }
+    ]
 }
