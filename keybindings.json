@@ -10,6 +10,13 @@
         "key": "ctrl+p",
         "command": "workbench.action.quickOpen"
     },
+    //////////////////////////////////
+    // Switch windows
+    ///////////////////////////////////
+    {
+        "key": "ctrl+; w",
+        "command": "workbench.action.quickSwitchWindow"
+    },
     ///////////////////////////////////
     // SCM
     ///////////////////////////////////
@@ -18,6 +25,10 @@
         "command": "scm.acceptInput",
         "when": "scmRepository"
     },
+    {
+        "key": "ctrl+; g",
+        "command": "workbench.view.scm"
+    },
     ///////////////////////////////////
     // Open files and folders
     ///////////////////////////////////
@@ -25,7 +36,7 @@
         "key": "ctrl+o",
         "command": "workbench.action.files.openFileFolder",
         "when": "isMac"
-    }
+    },
     ///////////////////////////////////
     // Panel
     ///////////////////////////////////
@@ -173,7 +184,9 @@
         "command": "workbench.view.extensions",
         "when": "viewContainer.workbench.view.extensions.enabled"
     },
-    // These will force me to use the previous ones
+    ///////////////////////////////////////////////
+    // These will force me to use my key bindings
+    ///////////////////////////////////////////////
     {
         "key": "shift+cmd+p",
         "command": "-workbench.action.showCommands"
@@ -192,5 +205,9 @@
         "key": "shift+cmd+f",
         "command": "-workbench.view.search",
         "when": "workbench.view.search.active"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "-workbench.action.findInFiles"
     }
 ]
