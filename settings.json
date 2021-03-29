@@ -5,7 +5,8 @@
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
-    "vim.leader": "space",
+    "vim.leader": "<space>",
+    "vim.easymotion": true,
     "vim.handleKeys": {
         "<C-b>": false,
         "<C-k>": false,
