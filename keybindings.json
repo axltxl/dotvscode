@@ -151,6 +151,13 @@
         "when": "editorFocus"
     },
     ///////////////////////////////////
+    // Terminal
+    ///////////////////////////////////
+    {
+        "key": "ctrl+; t",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    ///////////////////////////////////
     // Side panels
     ///////////////////////////////////
     {
