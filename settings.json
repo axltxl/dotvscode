@@ -192,8 +192,8 @@
     "material-icon-theme.saturation": 0.7,
     "material-icon-theme.folders.color": "#26a69a",
     "material-icon-theme.folders.theme": "specific",
-    "material-icon-theme.activeIconPack": "",
-    "workbench.colorTheme": "Nord",
+    "material-icon-theme.activeIconPack": "angular",
+    "workbench.colorTheme": "One Dark Pro",
     "vsicons.dontShowNewVersionMessage": true,
     ///////////////////////////////////
     // Zen mode
@@ -215,6 +215,7 @@
     ///////////////////////////////////
     // Integrated terminal
     ///////////////////////////////////
+    "terminal.external.osxExec": "iTerm2.app",
     "terminal.integrated.commandsToSkipShell": [
         "-workbench.action.quickOpen"
     ],
@@ -226,11 +227,11 @@
     "[terraform]": {
         "editor.formatOnSave": true
     },
+    "terraform-ls.experimentalFeatures": {
+        "validateOnSave": true
+    },
     "terraform.languageServer": {
-        "enabled": true,
-        "args": [
-            "serve"
-        ]
+        "external": true
     },
     "workbench.editorAssociations": [
         {
