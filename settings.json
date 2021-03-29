@@ -203,6 +203,7 @@
     "zenMode.centerLayout": false,
     "zenMode.hideLineNumbers": false,
     "zenMode.hideTabs": true,
+    "zenMode.hideActivityBar": false,
     ///////////////////////////////////
     // SCM settings
     ///////////////////////////////////
