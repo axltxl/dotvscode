@@ -193,7 +193,7 @@
     "material-icon-theme.folders.color": "#26a69a",
     "material-icon-theme.folders.theme": "specific",
     "material-icon-theme.activeIconPack": "angular",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Nord",
     "vsicons.dontShowNewVersionMessage": true,
     ///////////////////////////////////
     // Zen mode
