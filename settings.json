@@ -169,9 +169,6 @@
     "editor.autoClosingOvertype": "always",
     "editor.cursorBlinking": "solid",
     "editor.renderWhitespace": "all",
-    "editor.fontFamily": "Fira Code, monospace",
-    "editor.fontWeight": "400",
-    "editor.fontSize": 14,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     ///////////////////////////////////
@@ -184,6 +181,9 @@
     ///////////////////////////////////
     // Look and feel
     ///////////////////////////////////
+    "editor.fontFamily": "Input Mono, monospace",
+    "editor.fontSize": 14,
+    "editor.fontWeight": "400",
     "window.newWindowDimensions": "maximized",
     "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
