@@ -80,7 +80,9 @@
                 "workbench.action.splitEditorDown"
             ]
         },
+        ///////////////////////////////////
         // Editor management
+        ///////////////////////////////////
         {
             "before": [
                 "<leader>",
@@ -89,6 +91,50 @@
             ],
             "commands": [
                 "workbench.action.closeActiveEditor"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "m",
+                "l"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToRightGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "m",
+                "h"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToLeftGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "m",
+                "k"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToAboveGroup"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "w",
+                "m",
+                "j"
+            ],
+            "commands": [
+                "workbench.action.moveEditorToBelowGroup"
             ]
         },
         // vim-nerdcommenter
