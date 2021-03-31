@@ -239,7 +239,7 @@
     "material-icon-theme.folders.color": "#26a69a",
     "material-icon-theme.folders.theme": "specific",
     "material-icon-theme.activeIconPack": "angular",
-    "workbench.colorTheme": "Nord",
+    "workbench.colorTheme": "One Dark Pro",
     "vsicons.dontShowNewVersionMessage": true,
     ///////////////////////////////////
     // Zen mode
@@ -261,6 +261,7 @@
     ///////////////////////////////////
     // Integrated terminal
     ///////////////////////////////////
+    "terminal.integrated.fontSize": 13,
     "terminal.external.osxExec": "iTerm2.app",
     "terminal.integrated.commandsToSkipShell": [
         "-workbench.action.quickOpen"
@@ -279,6 +280,7 @@
     "terraform.languageServer": {
         "external": true
     },
+    // Python
     "workbench.editorAssociations": [
         {
             "viewType": "jupyter.notebook.ipynb",
