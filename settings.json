@@ -18,7 +18,9 @@
     // Key bindings for vim emulation
     /////////////////////////////////
     "vim.normalModeKeyBindings": [
+        /////////////////////////////////
         // Editor navigation
+        /////////////////////////////////
         {
             "before": [
                 "<leader>",
@@ -137,7 +139,9 @@
                 "workbench.action.moveEditorToBelowGroup"
             ]
         },
+        ///////////////////////////////////
         // vim-nerdcommenter
+        ///////////////////////////////////
         {
             "before": [
                 "<leader>",
@@ -148,7 +152,9 @@
                 "editor.action.commentLine"
             ]
         },
+        ///////////////////////////////////
         // vim-unimpaired
+        ///////////////////////////////////
         {
             "before": [
                 "[",
@@ -167,7 +173,9 @@
                 "editor.action.insertLineAfter"
             ]
         },
+        ///////////////////////////////////
         // File management
+        ///////////////////////////////////
         {
             "before": [
                 "<leader>",
@@ -187,7 +195,40 @@
             "commands": [
                 "workbench.action.files.save"
             ]
-        }
+        },
+        ///////////////////////////////////
+        // Debugger
+        ///////////////////////////////////
+        {
+            "before": [
+                "<leader>",
+                "d",
+                "b"
+            ],
+            "commands": [
+                "editor.debug.action.toggleBreakpoint"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d",
+                "s"
+            ],
+            "commands": [
+                "workbench.action.debug.selectandstart"
+            ]
+        },
+        {
+            "before": [
+                "<leader>",
+                "d",
+                "<space>"
+            ],
+            "commands": [
+                "workbench.action.debug.start"
+            ]
+        },
     ],
     "vim.visualModeKeyBindings": [
         {
@@ -215,6 +256,7 @@
     "editor.autoClosingOvertype": "always",
     "editor.cursorBlinking": "solid",
     "editor.renderWhitespace": "all",
+    "explorer.confirmDragAndDrop": false,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     ///////////////////////////////////
@@ -227,20 +269,47 @@
     ///////////////////////////////////
     // Look and feel
     ///////////////////////////////////
-    "editor.fontFamily": "Input Mono, monospace",
+    "editor.fontFamily": "Source Code Pro, monospace",
     "editor.fontSize": 14,
     "editor.fontWeight": "400",
+    "editor.letterSpacing": -0.23,
     "window.newWindowDimensions": "maximized",
     "window.menuBarVisibility": "toggle",
     "window.zoomLevel": 0,
     "files.simpleDialog.enable": true,
-    "workbench.iconTheme": "material-icon-theme",
+    "workbench.editor.untitled.hint": "hidden",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    // icons
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
     "material-icon-theme.saturation": 0.7,
     "material-icon-theme.folders.color": "#26a69a",
     "material-icon-theme.folders.theme": "specific",
     "material-icon-theme.activeIconPack": "angular",
-    "workbench.colorTheme": "One Dark Pro",
-    "vsicons.dontShowNewVersionMessage": true,
+    ///////////////////////////////////
+    // Syntax highlighting customizations
+    ///////////////////////////////////
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "keyword",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "storage.type",
+                "settings": {
+                    "fontStyle": "bold",
+                }
+            },
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
     ///////////////////////////////////
     // Zen mode
     ///////////////////////////////////
@@ -270,7 +339,6 @@
     // Plugins section
     ///////////////////////////////////
     // Terraform
-    // (hashicorp.terraform)
     "[terraform]": {
         "editor.formatOnSave": true
     },
@@ -278,13 +346,22 @@
         "validateOnSave": true
     },
     "terraform.languageServer": {
-        "external": true
+        "external": true,
+        "args": [
+            "serve"
+        ],
+        "maxNumberOfProblems": 100,
+        "trace.server": "off"
     },
     // Python
+    "python.pythonPath": "/usr/bin/python3",
     "workbench.editorAssociations": [
         {
             "viewType": "jupyter.notebook.ipynb",
             "filenamePattern": "*.ipynb"
         }
-    ]
+    ],
+    // golang
+    "go.toolsManagement.autoUpdate": true,
+    "go.useLanguageServer": true
 }
