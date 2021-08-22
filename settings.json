@@ -1,367 +1,434 @@
 {
-    /////////////////////////////
-    // vim (the most basic thing)
-    /////////////////////////////
-    "vim.useSystemClipboard": true,
-    "vim.useCtrlKeys": true,
-    "vim.hlsearch": true,
-    "vim.leader": "<space>",
-    "vim.easymotion": true,
-    "vim.handleKeys": {
-        "<C-b>": false,
-        "<C-k>": false,
-        "<C-j>": false,
-        "<C-w>": false,
-        "<C-o>": false
-    },
+  /////////////////////////////
+  // vim (the most basic thing)
+  /////////////////////////////
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.leader": "<space>",
+  "vim.easymotion": true,
+  "vim.statusBarColorControl": false,
+  "vim.handleKeys": {
+    "<C-b>": false,
+    "<C-k>": false,
+    "<C-j>": false,
+    "<C-w>": false,
+    "<C-o>": false
+  },
+  /////////////////////////////////
+  // Key bindings for vim emulation
+  /////////////////////////////////
+  "vim.normalModeKeyBindings": [
     /////////////////////////////////
-    // Key bindings for vim emulation
+    // Editor navigation
     /////////////////////////////////
-    "vim.normalModeKeyBindings": [
-        /////////////////////////////////
-        // Editor navigation
-        /////////////////////////////////
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "h"
-            ],
-            "commands": [
-                "workbench.action.focusLeftGroup"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "j"
-            ],
-            "commands": [
-                "workbench.action.focusBelowGroup"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "k"
-            ],
-            "commands": [
-                "workbench.action.focusAboveGroup"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "l"
-            ],
-            "commands": [
-                "workbench.action.focusRightGroup"
-            ]
-        },
-        // Split editors
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "v"
-            ],
-            "commands": [
-                "workbench.action.splitEditorRight"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "s"
-            ],
-            "commands": [
-                "workbench.action.splitEditorDown"
-            ]
-        },
-        ///////////////////////////////////
-        // Editor management
-        ///////////////////////////////////
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "d"
-            ],
-            "commands": [
-                "workbench.action.closeActiveEditor"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "m",
-                "l"
-            ],
-            "commands": [
-                "workbench.action.moveEditorToRightGroup"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "m",
-                "h"
-            ],
-            "commands": [
-                "workbench.action.moveEditorToLeftGroup"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "m",
-                "k"
-            ],
-            "commands": [
-                "workbench.action.moveEditorToAboveGroup"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "w",
-                "m",
-                "j"
-            ],
-            "commands": [
-                "workbench.action.moveEditorToBelowGroup"
-            ]
-        },
-        ///////////////////////////////////
-        // vim-nerdcommenter
-        ///////////////////////////////////
-        {
-            "before": [
-                "<leader>",
-                ";",
-                ";"
-            ],
-            "commands": [
-                "editor.action.commentLine"
-            ]
-        },
-        ///////////////////////////////////
-        // vim-unimpaired
-        ///////////////////////////////////
-        {
-            "before": [
-                "[",
-                "space"
-            ],
-            "commands": [
-                "editor.action.insertLineBefore"
-            ]
-        },
-        {
-            "before": [
-                "]",
-                "space"
-            ],
-            "commands": [
-                "editor.action.insertLineAfter"
-            ]
-        },
-        ///////////////////////////////////
-        // File management
-        ///////////////////////////////////
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "n"
-            ],
-            "commands": [
-                "workbench.action.files.newUntitledFile"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "f",
-                "s"
-            ],
-            "commands": [
-                "workbench.action.files.save"
-            ]
-        },
-        ///////////////////////////////////
-        // Debugger
-        ///////////////////////////////////
-        {
-            "before": [
-                "<leader>",
-                "d",
-                "b"
-            ],
-            "commands": [
-                "editor.debug.action.toggleBreakpoint"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "d",
-                "s"
-            ],
-            "commands": [
-                "workbench.action.debug.selectandstart"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "d",
-                "<space>"
-            ],
-            "commands": [
-                "workbench.action.debug.start"
-            ]
-        },
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "<leader>",
-                ";"
-            ],
-            "commands": [
-                "editor.action.commentLine"
-            ]
-        },
-    ],
-    ///////////////////////////////////
-    // Text editing settings
-    ///////////////////////////////////
-    "explorer.confirmDelete": false,
-    "editor.minimap.enabled": false,
-    "editor.tabSize": 2,
-    "editor.insertSpaces": true,
-    "editor.tabCompletion": "on",
-    "editor.cursorStyle": "block",
-    "editor.formatOnType": true,
-    "editor.formatOnPaste": true,
-    "editor.formatOnSave": true,
-    "editor.autoClosingOvertype": "always",
-    "editor.cursorBlinking": "solid",
-    "editor.renderWhitespace": "all",
-    "explorer.confirmDragAndDrop": false,
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true,
-    ///////////////////////////////////
-    // Editor group settings
-    ///////////////////////////////////
-    "workbench.editor.limit.enabled": true,
-    "workbench.editor.limit.perEditorGroup": true,
-    "workbench.editor.limit.value": 3,
-    "workbench.editor.showTabs": true,
-    ///////////////////////////////////
-    // Look and feel
-    ///////////////////////////////////
-    "editor.fontFamily": "Source Code Pro, monospace",
-    "editor.fontSize": 14,
-    "editor.fontWeight": "400",
-    "editor.letterSpacing": -0.23,
-    "window.newWindowDimensions": "maximized",
-    "window.menuBarVisibility": "toggle",
-    "window.zoomLevel": 0,
-    "files.simpleDialog.enable": true,
-    "workbench.editor.untitled.hint": "hidden",
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
-    // icons
-    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
-    "material-icon-theme.saturation": 0.7,
-    "material-icon-theme.folders.color": "#26a69a",
-    "material-icon-theme.folders.theme": "specific",
-    "material-icon-theme.activeIconPack": "angular",
-    ///////////////////////////////////
-    // Syntax highlighting customizations
-    ///////////////////////////////////
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": "keyword",
-                "settings": {
-                    "fontStyle": "bold"
-                }
-            },
-            {
-                "scope": "storage.type",
-                "settings": {
-                    "fontStyle": "bold",
-                }
-            },
-            {
-                "scope": "comment",
-                "settings": {
-                    "fontStyle": ""
-                }
-            }
-        ]
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.focusLeftGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "j"
+      ],
+      "commands": [
+        "workbench.action.focusBelowGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.focusAboveGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.focusRightGroup"
+      ]
+    },
+    // Split editors
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "v"
+      ],
+      "commands": [
+        "workbench.action.splitEditorRight"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.splitEditorDown"
+      ]
     },
     ///////////////////////////////////
-    // Zen mode
+    // Editor management
     ///////////////////////////////////
-    "zenMode.fullScreen": true,
-    "zenMode.hideStatusBar": false,
-    "zenMode.centerLayout": false,
-    "zenMode.hideLineNumbers": false,
-    "zenMode.hideTabs": true,
-    "zenMode.hideActivityBar": false,
-    ///////////////////////////////////
-    // SCM settings
-    ///////////////////////////////////
-    "git.autofetch": true,
-    "git.showProgress": true,
-    "git.suggestSmartCommit": false,
-    "diffEditor.renderSideBySide": false,
-    "diffEditor.ignoreTrimWhitespace": false,
-    ///////////////////////////////////
-    // Integrated terminal
-    ///////////////////////////////////
-    "terminal.integrated.fontSize": 13,
-    "terminal.external.osxExec": "iTerm2.app",
-    "terminal.integrated.commandsToSkipShell": [
-        "-workbench.action.quickOpen"
-    ],
-    ///////////////////////////////////
-    // Plugins section
-    ///////////////////////////////////
-    // Terraform
-    "[terraform]": {
-        "editor.formatOnSave": true
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "d"
+      ],
+      "commands": [
+        "workbench.action.closeActiveEditor"
+      ]
     },
-    "terraform-ls.experimentalFeatures": {
-        "validateOnSave": true
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "m",
+        "l"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToRightGroup"
+      ]
     },
-    "terraform.languageServer": {
-        "external": true,
-        "args": [
-            "serve"
-        ],
-        "maxNumberOfProblems": 100,
-        "trace.server": "off"
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "m",
+        "h"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToLeftGroup"
+      ]
     },
-    // Python
-    "python.pythonPath": "/usr/bin/python3",
-    "workbench.editorAssociations": [
-        {
-            "viewType": "jupyter.notebook.ipynb",
-            "filenamePattern": "*.ipynb"
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "m",
+        "k"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToAboveGroup"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "w",
+        "m",
+        "j"
+      ],
+      "commands": [
+        "workbench.action.moveEditorToBelowGroup"
+      ]
+    },
+    ///////////////////////////////////
+    // vim-nerdcommenter
+    ///////////////////////////////////
+    {
+      "before": [
+        "<leader>",
+        ";",
+        ";"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    },
+    ///////////////////////////////////
+    // vim-unimpaired
+    ///////////////////////////////////
+    {
+      "before": [
+        "[",
+        "space"
+      ],
+      "commands": [
+        "editor.action.insertLineBefore"
+      ]
+    },
+    {
+      "before": [
+        "]",
+        "space"
+      ],
+      "commands": [
+        "editor.action.insertLineAfter"
+      ]
+    },
+    ///////////////////////////////////
+    // File management
+    ///////////////////////////////////
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "n"
+      ],
+      "commands": [
+        "workbench.action.files.newUntitledFile"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.files.save"
+      ]
+    },
+    ///////////////////////////////////
+    // Debugger
+    ///////////////////////////////////
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "b"
+      ],
+      "commands": [
+        "editor.debug.action.toggleBreakpoint"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.debug.selectandstart"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "d",
+        "<space>"
+      ],
+      "commands": [
+        "workbench.action.debug.start"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "t",
+        "s"
+      ],
+      "commands": [
+        "workbench.action.tasks.runTask"
+      ]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": [
+        "<leader>",
+        ";"
+      ],
+      "commands": [
+        "editor.action.commentLine"
+      ]
+    }
+  ],
+  ///////////////////////////////////
+  // Text editing settings
+  ///////////////////////////////////
+  "explorer.confirmDelete": false,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "editor.tabCompletion": "on",
+  "editor.cursorStyle": "line",
+  "editor.formatOnType": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.autoClosingOvertype": "always",
+  "editor.cursorBlinking": "solid",
+  "editor.renderWhitespace": "all",
+  "explorer.confirmDragAndDrop": false,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  ///////////////////////////////////
+  // Editor group settings
+  ///////////////////////////////////
+  "workbench.editor.limit.enabled": true,
+  "workbench.editor.limit.perEditorGroup": true,
+  "workbench.editor.limit.value": 3,
+  "workbench.editor.showTabs": true,
+  ///////////////////////////////////
+  // Look and feel
+  ///////////////////////////////////
+  // "editor.fontFamily": "Source Code Pro, monospace",
+  "editor.fontFamily": "Input Mono, monospace",
+  "editor.fontSize": 15,
+  "editor.fontWeight": "400",
+  "editor.letterSpacing": -0.22,
+  "window.newWindowDimensions": "maximized",
+  "window.menuBarVisibility": "toggle",
+  "files.simpleDialog.enable": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "workbench.colorTheme": "One Dark Pro Flat",
+  // icons
+  "workbench.iconTheme": "material-icon-theme",
+  "material-icon-theme.saturation": 0.7,
+  "material-icon-theme.folders.color": "#26a69a",
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.activeIconPack": "angular",
+  ///////////////////////////////////
+  // Syntax highlighting customizations
+  ///////////////////////////////////
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "keyword",
+        "settings": {
+          "fontStyle": "bold"
         }
+      },
+      {
+        "scope": "storage.type",
+        "settings": {
+          "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  ///////////////////////////////////
+  // Zen mode
+  ///////////////////////////////////
+  "zenMode.fullScreen": true,
+  "zenMode.hideStatusBar": false,
+  "zenMode.centerLayout": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.hideTabs": true,
+  "zenMode.hideActivityBar": false,
+  ///////////////////////////////////
+  // SCM settings
+  ///////////////////////////////////
+  "git.autofetch": true,
+  "git.showProgress": true,
+  "git.suggestSmartCommit": false,
+  "diffEditor.renderSideBySide": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  ///////////////////////////////////
+  // Integrated terminal
+  ///////////////////////////////////
+  "terminal.integrated.fontSize": 13,
+  "terminal.external.osxExec": "iTerm2.app",
+  "terminal.integrated.commandsToSkipShell": [
+    "-workbench.action.quickOpen"
+  ],
+  ///////////////////////////////////
+  // Plugins section
+  ///////////////////////////////////
+  // Terraform
+  "terraform-ls.experimentalFeatures": {
+    "validateOnSave": true
+  },
+  "terraform.languageServer": {
+    "external": true,
+    "args": [
+      "serve"
     ],
-    // golang
-    "go.toolsManagement.autoUpdate": true,
-    "go.useLanguageServer": true
+    "maxNumberOfProblems": 100,
+    "trace.server": "off"
+  },
+  // Python
+  "python.pythonPath": "/usr/bin/python3",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  // golang
+  "go.toolsManagement.autoUpdate": true,
+  "go.useLanguageServer": true,
+  "go.lintOnSave": "workspace",
+  "go.lintTool": "golangci-lint",
+  "[go]": {
+    "editor.defaultFormatter": "golang.go"
+  },
+  // yaml
+  "yaml.customTags": [
+    "!Ref",
+    "!GetAtt",
+    "!FindInMap sequence",
+    "!FindInMap scalar",
+    "!GetAtt",
+    "!GetAZs",
+    "!Cidr",
+    "!ImportValue",
+    "!Join sequence",
+    "!Select",
+    "!Split",
+    "!Sub sequence",
+    "!Sub scalar",
+    "!And",
+    "!Equals",
+    "!If",
+    "!Not",
+    "!Or",
+    "!And sequence",
+    "!If sequence",
+    "!Not sequence",
+    "!Equals sequence",
+    "!Or sequence",
+    "!FindInMap",
+    "!Base64",
+    "!Join",
+    "!Sub",
+    "!ImportValue sequence",
+    "!Select sequence",
+    "!Split sequence"
+  ],
+  "git.confirmSync": false,
+  "editor.lineNumbers": "on",
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  "editor.wordWrap": "off",
+  "files.associations": {
+    "*.vim": "vimrc"
+  },
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "yaml.schemas": {
+    "file:/Users/alri/Library/Application Support/Code/User/globalStorage/amazonwebservices.aws-toolkit-vscode/cloudformation.schema.json": [
+      "cloudformation/logging-lambdaforwarder.yaml",
+      "cloudformation/sre-whoisoncall.yaml"
+    ]
+  },
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "clangd.checkUpdates": true,
+  "clangd.path": "/Users/alri/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/12.0.1/clangd_12.0.1/bin/clangd",
+  "debug.onTaskErrors": "showErrors",
+  "task.problemMatchers.neverPrompt": {
+    "process": true
+  }
 }

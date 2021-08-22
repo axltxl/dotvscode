@@ -6,6 +6,7 @@
     "vscodevim.vim",
     "alefragnani.project-manager",
     "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
     ///////////////////////////////////
     // Git
     ///////////////////////////////////
@@ -23,6 +24,8 @@
     "humao.rest-client",
     // YAML
     "redhat.vscode-yaml",
+    // AWS
+    "aws-scripting-guy.cform",
     // Python
     "ms-python.python",
     "wholroyd.jinja",
