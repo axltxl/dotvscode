@@ -7,9 +7,13 @@
     "alefragnani.project-manager",
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
+    // Snippets
+    "geddski.macros",
+    // FIXMEs and TODOs
+    "gruntfuggly.todo-tree",
     ///////////////////////////////////
     // Git
-    ///////////////////////////////////
+    ///////////////////////
     "eamodio.gitlens",
     "github.vscode-pull-request-github", // GitHub pull requests and issues management
     ///////////////////////////////////

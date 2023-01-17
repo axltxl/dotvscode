@@ -1,5 +1,20 @@
 {
   /////////////////////////////
+  // Macros
+  /////////////////////////////
+  "macros": {
+    "quickFixmeComment": [
+      "extension.vim_insert",
+      {
+        "command": "type",
+        "args": {
+          "text": "FIXME: "
+        }
+      },
+      "editor.action.commentLine"
+    ]
+  },
+  /////////////////////////////
   // vim (the most basic thing)
   /////////////////////////////
   "vim.useSystemClipboard": true,
@@ -230,6 +245,9 @@
         "workbench.action.debug.start"
       ]
     },
+    ///////////////////////////////////
+    // Task management
+    ///////////////////////////////////
     {
       "before": [
         "<leader>",
@@ -239,7 +257,55 @@
       "commands": [
         "workbench.action.tasks.runTask"
       ]
-    }
+    },
+    ///////////////////////////////////
+    // Git
+    ///////////////////////////////////
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "f"
+      ],
+      "commands": [
+        "git.fetchAll"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "c",
+        "o"
+      ],
+      "commands": [
+        "git.checkout"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        ";",
+        "f"
+      ],
+      "commands": [
+        "macros.quickFixmeComment"
+      ]
+    },
+    ///////////////////////////////////
+    // GitHub
+    ///////////////////////////////////
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "h",
+        "p"
+      ],
+      "commands": [
+        "pr:github.focus"
+      ]
+    },
   ],
   "vim.visualModeKeyBindings": [
     {
@@ -280,16 +346,19 @@
   ///////////////////////////////////
   // Look and feel
   ///////////////////////////////////
-  // "editor.fontFamily": "Source Code Pro, monospace",
-  "editor.fontFamily": "Input Mono, monospace",
-  "editor.fontSize": 15,
+  "editor.fontFamily": "Source Code Pro, monospace",
+  // "editor.fontFamily": "Input Mono, monospace",
+  // "editor.fontSize": 15,
+  "editor.fontSize": 16,
   "editor.fontWeight": "400",
   "editor.letterSpacing": -0.22,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "window.newWindowDimensions": "maximized",
   "window.menuBarVisibility": "toggle",
   "files.simpleDialog.enable": true,
   "workbench.editor.untitled.hint": "hidden",
-  "workbench.colorTheme": "One Dark Pro Flat",
+  "workbench.colorTheme": "Simple Dark",
   // icons
   "workbench.iconTheme": "material-icon-theme",
   "material-icon-theme.saturation": 0.7,
@@ -350,11 +419,12 @@
   // Plugins section
   ///////////////////////////////////
   // Terraform
-  "terraform-ls.experimentalFeatures": {
-    "validateOnSave": true
-  },
+  // "terraform-ls.experimentalFeatures": {
+  //   "validateOnSave": true
+  // },
   "terraform.languageServer": {
     "external": true,
+    "pathToBinary": "",
     "args": [
       "serve"
     ],
@@ -418,17 +488,47 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
+  "[yaml]": {
+    "editor.formatOnSave": false,
+    "editor.formatOnPaste": false
+  },
   "yaml.schemas": {
     "file:/Users/alri/Library/Application Support/Code/User/globalStorage/amazonwebservices.aws-toolkit-vscode/cloudformation.schema.json": [
       "cloudformation/logging-lambdaforwarder.yaml",
       "cloudformation/sre-whoisoncall.yaml"
+    ],
+    "file:///Users/alri/Library/Application%20Support/Code/User/globalStorage/amazonwebservices.aws-toolkit-vscode/cloudformation.schema.json": [
+      "cloudformation/sre-whoisoncall.yaml",
+      "pkg/cfn/test-fixtures/tpcfn-lambdaschedule.yaml",
+      "pkg/cfn/test-fixtures/tpcfn-lambda.yaml",
+      "pkg/cfn/test-fixtures/tpcfn-lambdasqs.yaml",
+      "cloudformation/devops-cloudtrailpreprocessor.yaml",
+      "cloudformation/logging-ecsfargateforwarder.yaml",
+      "cloudformation/devops-octopusdeploymentsnotifier.yaml",
+      "cloudformation/aws-cloudwatchalertscollector.yaml",
+      "cloudformation/infrastructure-alertsenricher.yaml",
+      "cloudformation/infrastructure-alertspublisher.yaml",
+      "cloudformation/slackalerts-notifier.yaml"
+    ],
+    "file:///Users/alri/Library/Application%20Support/Code/User/globalStorage/amazonwebservices.aws-toolkit-vscode/sam.schema.json": [
+      "cloudformation/cloudformation-vpcmacro.yaml",
+      "cloudformation/cloudformation-conformitymacro.yaml"
     ]
   },
   "C_Cpp.intelliSenseEngine": "Disabled",
   "clangd.checkUpdates": true,
   "clangd.path": "/Users/alri/Library/Application Support/Code/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/12.0.1/clangd_12.0.1/bin/clangd",
   "debug.onTaskErrors": "showErrors",
-  "task.problemMatchers.neverPrompt": {
-    "process": true
-  }
+  "json.schemas": [],
+  "editor.suggest.showMethods": true,
+  "editor.suggest.preview": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.snippetSuggestions": "top",
+  "editor.inlayHints.enabled": "on",
+  "snyk.advanced.cliPath": "/usr/local/bin/snyk",
+  "snyk.trustedFolders": [
+    "/Users/alri/Projects/corp/trustpilot/sre/mongo-instancemanager"
+  ],
+  "githubPullRequests.pushBranch": "always",
+  "security.workspace.trust.untrustedFiles": "open",
 }
